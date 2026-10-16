@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scanner - это стандартный способ чтения ввода в Java (аналог cin)
+        //стандартный способ чтения ввода
         Scanner scanner = new Scanner(System.in);
         
         // читаем число N
         if (scanner.hasNextInt()) {
             int n = scanner.nextInt();
             
-            // Создаем список (аналог vector в C++)
+            // создаем список
             List<Integer> nums = new ArrayList<>();
             
             // читаем N чисел и добавляем их в список
