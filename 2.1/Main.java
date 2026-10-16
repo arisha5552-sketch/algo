@@ -7,23 +7,23 @@ public class Main {
         // Scanner - это стандартный способ чтения ввода в Java (аналог cin)
         Scanner scanner = new Scanner(System.in);
         
-        // Читаем число N
+        // читаем число N
         if (scanner.hasNextInt()) {
             int n = scanner.nextInt();
             
             // Создаем список (аналог vector в C++)
             List<Integer> nums = new ArrayList<>();
             
-            // Читаем N чисел и добавляем их в список
+            // читаем N чисел и добавляем их в список
             for (int i = 0; i < n; i++) {
                 nums.add(scanner.nextInt());
             }
             
-            // Создаем объект сортировки и вызываем метод
+            // создаем объект сортировки и вызываем метод
             InsertionSort sorter = new InsertionSort();
             sorter.sort(nums);
             
-            // Выводим отсортированный список через пробел
+            // выводим
             for (int i = 0; i < n; i++) {
                 System.out.print(nums.get(i));
                 if (i < n - 1) { // Пробел после каждого числа, кроме последнего
@@ -32,6 +32,6 @@ public class Main {
             }
         }
         
-        scanner.close(); // Закрываем сканер (хороший тон)
+        scanner.close(); // закрываем сканер
     }
 }
