@@ -1,4 +1,4 @@
-public class Solution {
+ public class Solution {
     //принимает массив чисел и число, которое надо удалить
     public int removeElementInPlace(int[] nums, int val) {
         
